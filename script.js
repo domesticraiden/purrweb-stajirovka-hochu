@@ -16,8 +16,9 @@ const dialogRequired = document.querySelector(".dialog__required");
 const dialogBtn = document.querySelector(".dialog__btn");
 openDialogButton.forEach((item) =>
   item.addEventListener("click", () => {
-    openDialog(dialog);
+    dialogBtn.disabled = true;
     checkFieldOnOpen();
+    openDialog(dialog);
   })
 );
 dialog.addEventListener("click", checkBackdrop);
@@ -34,11 +35,11 @@ fieldRequired.forEach((item) => {
 dialogBtn.addEventListener("click", () => {
   closeDialog(dialog);
   checkFieldOnClose();
-  dialogBtn.disabled = true;
   openDialog(done);
 });
 dialog.addEventListener("close", () => {
   closeOnESC(dialog);
+  checkFieldOnClose();
 });
 
 const done = document.querySelector(".done");
@@ -87,6 +88,7 @@ function checkBackdrop(event) {
     rect.bottom < event.clientY
   ) {
     closeDialog(dialog);
+    checkFieldOnClose();
   }
 }
 function closeDialog(item) {
