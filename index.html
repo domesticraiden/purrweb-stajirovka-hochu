@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budss</title>
+    <link rel="icon" href="assets/logo.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="reset.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="super">
+      <div class="container">
+        <div class="super__inner">
+          <nav class="super__nav">
+            <ul class="super__list">
+              <li class="super__item">
+                <a href="/" class="super__link body-b1"> For Businesses </a>
+              </li>
+              <li class="super__item">
+                <a href="/" class="super__link body-b1"> For Customers </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a href="/" class="logo">
+            <img src="assets/logo.png" alt="" class="logo__img" />
+            <span class="logo__text"> budss </span>
+          </a>
+          <button class="btn btn-secondary open">
+            <span class="btn__text stitle-s4"> Contact sales </span>
+          </button>
+          <button class="burger">
+            <img src="assets/burger.png" alt="" class="burger__img" />
+          </button>
+        </div>
+      </div>
+      <div class="header__menu">
+        <div class="header__close">
+          <button class="header__close-inner">
+            <img src="assets/close-menu.png" alt="" class="header__close-img" />
+          </button>
+        </div>
+        <button class="btn btn-secondary open">
+          <span class="btn__text stitle-s4"> Contact sales </span>
+        </button>
+        <ul class="header__menu-list">
+          <li class="header__menu-item">
+            <a href="/" class="header__menu-link stitle-s5"> For Business </a>
+          </li>
+          <li class="header__menu-item">
+            <a href="/" class="header__menu-link stitle-s5"> For Customers </a>
+          </li>
+          <li class="header__menu-item">
+            <a href="/" class="header__menu-link stitle-s5"> Privacy Policy </a>
+          </li>
+          <li class="header__menu-item">
+            <a href="/" class="header__menu-link stitle-s5">
+              Terms Of Use - Seller
+            </a>
+          </li>
+          <li class="header__menu-item">
+            <a href="/" class="header__menu-link stitle-s5">
+              Terms of Use - Sellers & Customers
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <dialog class="dialog">
+        <div class="dialog__inner">
+          <button class="dialog__close">
+            <img
+              src="assets/close-dialog.png"
+              alt=""
+              class="dialog__close-img"
+            />
+          </button>
+          <div class="dialog__list">
+            <form action="" class="dialog__form">
+              <div class="dialog__form-title body-b3">
+                Name
+                <span class="dialog__form-symbol">*</span>
+              </div>
+              <input
+                placeholder="Enter name"
+                type="text"
+                class="field field-required body-b4"
+              />
+              <span class="dialog__form-required body-b7"
+                >This field is required.</span
+              >
+            </form>
+            <form action="" class="dialog__form">
+              <div class="dialog__form-title body-b3">
+                Email
+                <span class="dialog__form-symbol">*</span>
+              </div>
+              <input
+                placeholder="Enter email"
+                type="text"
+                class="field field-required body-b4"
+              />
+              <span class="dialog__form-required body-b7"
+                >This field is required.</span
+              >
+            </form>
+            <form action="" class="dialog__form">
+              <div class="dialog__form-title body-b3">
+                Phone number
+                <span class="dialog__form-symbol">*</span>
+              </div>
+              <input
+                placeholder="+7 900 000 00 00"
+                type="text"
+                class="field field-required body-b4"
+              />
+              <span class="dialog__form-required body-b7"
+                >This field is required.</span
+              >
+            </form>
+            <form action="" class="dialog__form">
+              <div class="dialog__form-title body-b3">Company</div>
+              <input
+                placeholder="Enter company"
+                type="text"
+                class="field body-b4"
+              />
+            </form>
+            <form action="" class="dialog__form">
+              <div class="dialog__form-title body-b3">Website/Store URL</div>
+              <input
+                placeholder="Enter Website/Store URL"
+                type="text"
+                class="field body-b4"
+              />
+            </form>
+          </div>
+          <span class="dialog__required body-b2">
+            Please fill in all required fields
+          </span>
+          <span class="dialog__text body-b5">
+            By submitting this form you are agreeing to Budss's
+            <a href="/" class="dialog__link">Privacy Policy</a> and
+            <a href="/" class="dialog__link">Terms of Use</a>
+          </span>
+          <button disabled class="btn btn-primary dialog__btn">
+            <span class="btn__text stitle-s4"> Contact sales </span>
+          </button>
+        </div>
+      </dialog>
+      <dialog class="done">
+        <div class="done__inner">
+          <button class="done__close">
+            <img
+              src="assets/close-dialog.png"
+              alt=""
+              class="done__close-img"
+            />
+          </button>
+          <img src="assets/done.png" alt="" class="done__img" />
+          <span class="done__title stitle-s1"> Thank you! </span>
+          <span class="done__text stitle-s3">
+            Thank you, we have received your application and will contact you
+            soon!
+          </span>
+          <button class="btn btn-primary done__btn">
+            <span class="btn__text stitle-s4"> Super! </span>
+          </button>
+        </div>
+      </dialog>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__menu">
+            <a href="/" class="logo">
+              <img src="assets/logo.png" alt="" class="logo__img" />
+              <span class="logo__text"> budss </span>
+            </a>
+            <nav class="footer__nav">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="/" class="footer__link stitle-s5"> For Business </a>
+                </li>
+                <li class="footer__item">
+                  <a href="/" class="footer__link stitle-s5"> For Customers </a>
+                </li>
+                <li class="footer__item">
+                  <a href="/" class="footer__link stitle-s5">
+                    Privacy Policy
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="/" class="footer__link stitle-s5">
+                    Terms Of Use - Seller
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="/" class="footer__link stitle-s5">
+                    Terms of Use - Sellers & Customers
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="footer__buttons">
+              <button class="btn btn-secondary open">
+                <span class="btn__text stitle-s4"> Contact sales </span>
+              </button>
+              <div class="footer__downloads">
+                <a href="/" class="footer__download">
+                  <img
+                    src="assets/appstore.png"
+                    alt=""
+                    class="footer__download-img"
+                  />
+                </a>
+                <a href="/" class="footer__download">
+                  <img
+                    src="assets/googleplay.png"
+                    alt=""
+                    class="footer__download-img"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__line"></div>
+          <div class="footer__copyright">
+            <span class="footer__copyright-text body-b5">
+              © Copyright 2023, All Rights Reserved by Budss
+            </span>
+            <div class="footer__copyright-links">
+              <a href="/" class="footer__copyright-link body-b6">
+                Privacy Policy
+              </a>
+              <a href="/" class="footer__copyright-link body-b6">
+                Terms Of Use - Seller
+              </a>
+              <a href="/" class="footer__copyright-link body-b6">
+                Terms of Use - Sellers & Customers
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
